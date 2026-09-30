@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipalEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- REGRESAR -->
+        <TextView
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="34sp"
+            android:textColor="#3A1F12"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Editar / Eliminar "
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#3A1F12"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="— Administra la información existente —"
+            android:textSize="15sp"
+            android:textColor="#8A6547"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="14dp" />
+
+        <!-- IMAGEN -->
+        <ImageView
+            android:layout_width="155dp"
+            android:layout_height="125dp"
+            android:src="@drawable/btn_editar_eliminar"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="14dp" />
+
+        <!-- TARJETA FORMULARIO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID del recurso"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtIdRecurso"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Ej. 1"
+                android:inputType="number"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNombreEdit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Nuevo nombre del recurso"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categoría"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtCategoriaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Nueva categoría"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtDescripcionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="Nueva descripción"
+                android:gravity="top"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enlace"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtEnlaceEdit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Nuevo enlace"
+                android:inputType="textUri"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nivel"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNivelEdit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Básico, Intermedio o Avanzado"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor"
+                android:textColor="#3A1F12"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtAutorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Nuevo autor"
+                android:background="@drawable/bg_input"
+                android:textColor="#3A1F12"
+                android:textColorHint="#A98970"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Guardar cambios"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_button_brown"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Eliminar recurso"
+                android:textColor="#E53935"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_button_red_outline" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
